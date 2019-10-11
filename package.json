@@ -1,0 +1,41 @@
+{
+  "name": "ajeeb-ecs",
+  "version": "0.1.0",
+  "description": "An Entity Component System implementation inspired by EnTT",
+  "main": "build/ecs.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc & rollup -c",
+    "build-docs": "npx typedoc --mode file --theme minimal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasser/ajeeb-ecs.git"
+  },
+  "keywords": [
+    "games",
+    "ecs",
+    "entity",
+    "component",
+    "system",
+    "entt"
+  ],
+  "author": "Ramsey Nasser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nasser/ajeeb-ecs/issues"
+  },
+  "homepage": "https://github.com/nasser/ajeeb-ecs#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "jest": "^24.9.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "rollup-plugin-typescript": "1.0.1",
+    "ts-jest": "^24.0.2",
+    "tslib": "1.10.0",
+    "typedoc": "~0.15.0",
+    "typescript": "~3.5.3"
+  }
+}
