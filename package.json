@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "npx tsc & rollup -c",
-    "build-docs": "npx typedoc --mode file --theme minimal"
+    "build-docs": "npx typedoc --mode file --theme minimal --exclude __tests__/**/*.* --excludeNotExported"
   },
   "repository": {
     "type": "git",

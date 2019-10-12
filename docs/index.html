@@ -2377,32 +2377,11 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-class tsd-is-not-exported">
-			<a href="classes/cachedview.html" class="tsd-kind-icon">Cached<wbr>View</a>
-		</li>
-		<li class=" tsd-kind-class tsd-is-not-exported">
-			<a href="classes/componentstore.html" class="tsd-kind-icon">Component<wbr>Store</a>
-		</li>
 		<li class=" tsd-kind-class">
 			<a href="classes/ecs.html" class="tsd-kind-icon">ECS</a>
 		</li>
-		<li class=" tsd-kind-class tsd-is-not-exported">
-			<a href="classes/registry.html" class="tsd-kind-icon">Registry</a>
-		</li>
-		<li class=" tsd-kind-class tsd-is-not-exported">
-			<a href="classes/view.html" class="tsd-kind-icon">View</a>
-		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="globals.html#entity" class="tsd-kind-icon">Entity</a>
-		</li>
-		<li class=" tsd-kind-object-literal tsd-is-not-exported">
-			<a href="globals.html#onecomponentspec" class="tsd-kind-icon">one<wbr>Component<wbr>Spec</a>
-		</li>
-		<li class=" tsd-kind-object-literal tsd-is-not-exported">
-			<a href="globals.html#twocomponentsspec" class="tsd-kind-icon">two<wbr>Components<wbr>Spec</a>
-		</li>
-		<li class=" tsd-kind-object-literal tsd-is-not-exported">
-			<a href="globals.html#twocomponentsspecdifferent" class="tsd-kind-icon">two<wbr>Components<wbr>Spec<wbr>Different</a>
 		</li>
 	</ul>
 </nav>
@@ -2418,6 +2397,60 @@ img {
 				<h2>Installation</h2>
 			</a>
 			<pre><code>npm <span class="hljs-keyword">install</span> nasser/ajeeb-ecs</code></pre>
+			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+				<h2>Usage</h2>
+			</a>
+			<pre><code class="language-js"><span class="hljs-keyword">import</span> { ECS } <span class="hljs-keyword">from</span> <span class="hljs-string">"ajeeb-ecs"</span>
+
+<span class="hljs-keyword">let</span> ecs = <span class="hljs-keyword">new</span> ECS()
+
+<span class="hljs-comment">/*** set up systems ***/</span>
+
+<span class="hljs-comment">// entities with a life component lose 1 life point every frame</span>
+ecs.onupdate(<span class="hljs-function"><span class="hljs-params">life</span> =&gt;</span> life.remaining -= <span class="hljs-number">1</span>)
+
+<span class="hljs-comment">// remove entities with a life component when life is zero</span>
+ecs.onupdate(<span class="hljs-function">(<span class="hljs-params">life, self</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span>(life.remaining &lt;= <span class="hljs-number">0</span>)
+        ecs.destroy(self)
+})
+
+<span class="hljs-comment">// apply gravity to entities with position</span>
+ecs.onupdate(<span class="hljs-function"><span class="hljs-params">position</span> =&gt;</span> position.y -= <span class="hljs-number">0.1</span>)
+
+<span class="hljs-comment">// randomMove component makes entities move around randomly</span>
+ecs.onupdate(<span class="hljs-function">(<span class="hljs-params">[position, randomMove]</span>) =&gt;</span> {
+    position.x += <span class="hljs-built_in">Math</span>.random() * randomMove.speed
+    position.y += <span class="hljs-built_in">Math</span>.random() * randomMove.speed
+})
+
+<span class="hljs-comment">// moveRight component makes entities move to the right</span>
+ecs.onupdate(<span class="hljs-function">(<span class="hljs-params">[position, moveRight]</span>) =&gt;</span> position.x += moveRight.speed)
+
+<span class="hljs-comment">/*** create entities and components ***/</span>
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10000</span>; i++) {
+    <span class="hljs-comment">// create entity at origin with random lifespan</span>
+    <span class="hljs-keyword">let</span> e = ecs.create({
+        <span class="hljs-attr">position</span>: { <span class="hljs-attr">x</span>:<span class="hljs-number">0</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">0</span> },
+        <span class="hljs-attr">life</span>: { <span class="hljs-attr">remaining</span>:<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">100</span> }
+    })
+
+    <span class="hljs-comment">// chance to add movement components</span>
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">Math</span>.random() &lt; <span class="hljs-number">0.5</span>)
+        ecs.assign(e, <span class="hljs-string">"randomMove"</span>, { <span class="hljs-attr">speed</span>:<span class="hljs-number">1</span> })
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">Math</span>.random() &lt; <span class="hljs-number">0.5</span>)
+        ecs.assign(e, <span class="hljs-string">"moveRight"</span>, { <span class="hljs-attr">speed</span>:<span class="hljs-number">2</span> })
+}
+
+
+<span class="hljs-comment">/*** update loop ***/</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loop</span>(<span class="hljs-params"></span>) </span>{
+    ecs.update()
+    requestAnimationFrame(loop)
+}
+loop() </code></pre>
 			<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
 				<h2>TODO</h2>
 			</a>
@@ -2434,25 +2467,13 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/cachedview.html" class="tsd-kind-icon">Cached<wbr>View</a></li>
-							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/componentstore.html" class="tsd-kind-icon">Component<wbr>Store</a></li>
 							<li class="tsd-kind-class"><a href="classes/ecs.html" class="tsd-kind-icon">ECS</a></li>
-							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/registry.html" class="tsd-kind-icon">Registry</a></li>
-							<li class="tsd-kind-class tsd-is-not-exported"><a href="classes/view.html" class="tsd-kind-icon">View</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Type aliases</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-type-alias"><a href="globals.html#entity" class="tsd-kind-icon">Entity</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section tsd-is-not-exported">
-						<h3>Object literals</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-object-literal tsd-is-not-exported"><a href="globals.html#onecomponentspec" class="tsd-kind-icon">one<wbr>Component<wbr>Spec</a></li>
-							<li class="tsd-kind-object-literal tsd-is-not-exported"><a href="globals.html#twocomponentsspec" class="tsd-kind-icon">two<wbr>Components<wbr>Spec</a></li>
-							<li class="tsd-kind-object-literal tsd-is-not-exported"><a href="globals.html#twocomponentsspecdifferent" class="tsd-kind-icon">two<wbr>Components<wbr>Spec<wbr>Different</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2466,7 +2487,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Entity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/ecs.ts#L5">ecs.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/3bba5ce/ecs.ts#L5">ecs.ts:5</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2475,189 +2496,6 @@ img {
 						should be treated as opaque identifiers.</p>
 					</div>
 				</div>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-			<h2>Object literals</h2>
-			<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-is-not-exported">
-				<a name="onecomponentspec" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagLet">Let</span> one<wbr>Component<wbr>Spec</h3>
-				<div class="tsd-signature tsd-kind-icon">one<wbr>Component<wbr>Spec<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L3">__tests__/create.ts:3</a></li>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L3">__tests__/destroy.ts:3</a></li>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L3">__tests__/update.ts:3</a></li>
-					</ul>
-				</aside>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="onecomponentspec.position" class="tsd-anchor"></a>
-					<h3>position</h3>
-					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L3">__tests__/create.ts:3</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L3">__tests__/destroy.ts:3</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L3">__tests__/update.ts:3</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="onecomponentspec.position.x" class="tsd-anchor"></a>
-						<h3>x</h3>
-						<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L3">__tests__/create.ts:3</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L3">__tests__/destroy.ts:3</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L3">__tests__/update.ts:3</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="onecomponentspec.position.y" class="tsd-anchor"></a>
-						<h3>y</h3>
-						<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;30</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L3">__tests__/create.ts:3</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L3">__tests__/destroy.ts:3</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L3">__tests__/update.ts:3</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-is-not-exported">
-				<a name="twocomponentsspec" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagLet">Let</span> two<wbr>Components<wbr>Spec</h3>
-				<div class="tsd-signature tsd-kind-icon">two<wbr>Components<wbr>Spec<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-					</ul>
-				</aside>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="twocomponentsspec.position" class="tsd-anchor"></a>
-					<h3>position</h3>
-					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspec.position.x" class="tsd-anchor"></a>
-						<h3>x</h3>
-						<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspec.position.y" class="tsd-anchor"></a>
-						<h3>y</h3>
-						<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;30</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="twocomponentsspec.speed" class="tsd-anchor"></a>
-					<h3>speed</h3>
-					<div class="tsd-signature tsd-kind-icon">speed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspec.speed.value" class="tsd-anchor"></a>
-						<h3>value</h3>
-						<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;20</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L4">__tests__/create.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/destroy.ts#L4">__tests__/destroy.ts:4</a></li>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/update.ts#L4">__tests__/update.ts:4</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-is-not-exported">
-				<a name="twocomponentsspecdifferent" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagLet">Let</span> two<wbr>Components<wbr>Spec<wbr>Different</h3>
-				<div class="tsd-signature tsd-kind-icon">two<wbr>Components<wbr>Spec<wbr>Different<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-					</ul>
-				</aside>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="twocomponentsspecdifferent.health" class="tsd-anchor"></a>
-					<h3>health</h3>
-					<div class="tsd-signature tsd-kind-icon">health<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspecdifferent.health.value" class="tsd-anchor"></a>
-						<h3>value</h3>
-						<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspecdifferent.health.vulnerable" class="tsd-anchor"></a>
-						<h3>vulnerable</h3>
-						<div class="tsd-signature tsd-kind-icon">vulnerable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="twocomponentsspecdifferent.speed" class="tsd-anchor"></a>
-					<h3>speed</h3>
-					<div class="tsd-signature tsd-kind-icon">speed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="twocomponentsspecdifferent.speed.value-1" class="tsd-anchor"></a>
-						<h3>value</h3>
-						<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/74cc439/__tests__/create.ts#L5">__tests__/create.ts:5</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
 			</section>
 		</section>
 		<footer class="with-border-bottom">
