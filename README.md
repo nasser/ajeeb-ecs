@@ -23,7 +23,7 @@ let ecs = new ECS()
 ecs.onupdate(life => life.remaining -= 1)
 
 // remove entities with a life component when life is zero
-ecs.onupdate((life, self) => {
+ecs.onupdate(([life, self]) => {
     if(life.remaining <= 0)
         ecs.destroy(self)
 })
