@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ECS | ajeeb-ecs</title>
+	<title>ComponentStore | ajeeb-ecs</title>
 	<meta name="description" content="Documentation for ajeeb-ecs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2725,85 +2725,70 @@ img {
 		<li class=" tsd-kind-class">
 			<a href="cachedview.html" class="tsd-kind-icon">Cached<wbr>View</a>
 		</li>
-		<li class=" tsd-kind-class">
-			<a href="componentstore.html" class="tsd-kind-icon">Component<wbr>Store</a>
-		</li>
 		<li class="current tsd-kind-class">
-			<a href="ecs.html" class="tsd-kind-icon">ECS</a>
+			<a href="componentstore.html" class="tsd-kind-icon">Component<wbr>Store</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="ecs.html#components" class="tsd-kind-icon">components</a>
+				<li class=" tsd-kind-constructor tsd-parent-kind-class">
+					<a href="componentstore.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
-					<a href="ecs.html#registry" class="tsd-kind-icon">registry</a>
+					<a href="componentstore.html#components" class="tsd-kind-icon">components</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#updatesystems" class="tsd-kind-icon">update<wbr>Systems</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#entities" class="tsd-kind-icon">entities</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#viewcache" class="tsd-kind-icon">view<wbr>Cache</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#indices" class="tsd-kind-icon">indices</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#_getcomponentparamnames" class="tsd-kind-icon">_get<wbr>Component<wbr>Param<wbr>Names</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#name" class="tsd-kind-icon">name</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#addassignsystem" class="tsd-kind-icon">add<wbr>Assign<wbr>System</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#oncreate" class="tsd-kind-icon">oncreate</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#addremovesystem" class="tsd-kind-icon">add<wbr>Remove<wbr>System</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#ondestroy" class="tsd-kind-icon">ondestroy</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#addupdatesystem" class="tsd-kind-icon">add<wbr>Update<wbr>System</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#assign" class="tsd-kind-icon">assign</a>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="componentstore.html#size" class="tsd-kind-icon">size</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#component" class="tsd-kind-icon">component</a>
+					<a href="componentstore.html#assign" class="tsd-kind-icon">assign</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#create" class="tsd-kind-icon">create</a>
+					<a href="componentstore.html#clear" class="tsd-kind-icon">clear</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#destroy" class="tsd-kind-icon">destroy</a>
+					<a href="componentstore.html#contains" class="tsd-kind-icon">contains</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#destroyall" class="tsd-kind-icon">destroy<wbr>All</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#getcachedview" class="tsd-kind-icon">get<wbr>Cached<wbr>View</a>
+					<a href="componentstore.html#each" class="tsd-kind-icon">each</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#getcomponent" class="tsd-kind-icon">get<wbr>Component</a>
+					<a href="componentstore.html#eachcomponent" class="tsd-kind-icon">each<wbr>Component</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#getcomponents" class="tsd-kind-icon">get<wbr>Components</a>
+					<a href="componentstore.html#eachentity" class="tsd-kind-icon">each<wbr>Entity</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#hascomponent" class="tsd-kind-icon">has<wbr>Component</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#newcachedview" class="tsd-kind-icon">new<wbr>Cached<wbr>View</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#onassign" class="tsd-kind-icon">onassign</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#onremove" class="tsd-kind-icon">onremove</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a href="ecs.html#onupdate" class="tsd-kind-icon">onupdate</a>
+					<a href="componentstore.html#get" class="tsd-kind-icon">get</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#remove" class="tsd-kind-icon">remove</a>
+					<a href="componentstore.html#getcomponents" class="tsd-kind-icon">get<wbr>Components</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="ecs.html#update" class="tsd-kind-icon">update</a>
+					<a href="componentstore.html#insert" class="tsd-kind-icon">insert</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a href="ecs.html#view" class="tsd-kind-icon">view</a>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="componentstore.html#remove" class="tsd-kind-icon">remove</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="componentstore.html#replace" class="tsd-kind-icon">replace</a>
 				</li>
 			</ul>
+		</li>
+		<li class=" tsd-kind-class">
+			<a href="ecs.html" class="tsd-kind-icon">ECS</a>
 		</li>
 		<li class=" tsd-kind-class">
 			<a href="registry.html" class="tsd-kind-icon">Registry</a>
@@ -2822,7 +2807,7 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">ECS</span>
+					<span class="target">ComponentStore</span>
 				</li>
 			</ul>
 		</section>
@@ -2831,40 +2816,66 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
+						<h3>Constructors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="componentstore.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="ecs.html#components" class="tsd-kind-icon">components</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class"><a href="ecs.html#registry" class="tsd-kind-icon">registry</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ecs.html#updatesystems" class="tsd-kind-icon">update<wbr>Systems</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ecs.html#viewcache" class="tsd-kind-icon">view<wbr>Cache</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#components" class="tsd-kind-icon">components</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#entities" class="tsd-kind-icon">entities</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#indices" class="tsd-kind-icon">indices</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#name" class="tsd-kind-icon">name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#oncreate" class="tsd-kind-icon">oncreate</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#ondestroy" class="tsd-kind-icon">ondestroy</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="componentstore.html#size" class="tsd-kind-icon">size</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="ecs.html#_getcomponentparamnames" class="tsd-kind-icon">_get<wbr>Component<wbr>Param<wbr>Names</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#addassignsystem" class="tsd-kind-icon">add<wbr>Assign<wbr>System</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#addremovesystem" class="tsd-kind-icon">add<wbr>Remove<wbr>System</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#addupdatesystem" class="tsd-kind-icon">add<wbr>Update<wbr>System</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#assign" class="tsd-kind-icon">assign</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#component" class="tsd-kind-icon">component</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#create" class="tsd-kind-icon">create</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#destroy" class="tsd-kind-icon">destroy</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#destroyall" class="tsd-kind-icon">destroy<wbr>All</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="ecs.html#getcachedview" class="tsd-kind-icon">get<wbr>Cached<wbr>View</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#getcomponent" class="tsd-kind-icon">get<wbr>Component</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#getcomponents" class="tsd-kind-icon">get<wbr>Components</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#hascomponent" class="tsd-kind-icon">has<wbr>Component</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="ecs.html#newcachedview" class="tsd-kind-icon">new<wbr>Cached<wbr>View</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#onassign" class="tsd-kind-icon">onassign</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#onremove" class="tsd-kind-icon">onremove</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="ecs.html#onupdate" class="tsd-kind-icon">onupdate</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#remove" class="tsd-kind-icon">remove</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="ecs.html#update" class="tsd-kind-icon">update</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="ecs.html#view" class="tsd-kind-icon">view</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#assign" class="tsd-kind-icon">assign</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#clear" class="tsd-kind-icon">clear</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#contains" class="tsd-kind-icon">contains</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#each" class="tsd-kind-icon">each</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#eachcomponent" class="tsd-kind-icon">each<wbr>Component</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#eachentity" class="tsd-kind-icon">each<wbr>Entity</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#get" class="tsd-kind-icon">get</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#getcomponents" class="tsd-kind-icon">get<wbr>Components</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#insert" class="tsd-kind-icon">insert</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#remove" class="tsd-kind-icon">remove</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="componentstore.html#replace" class="tsd-kind-icon">replace</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Component<wbr>Store<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L14">ecs.ts:14</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>name: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="componentstore.html" class="tsd-signature-type">ComponentStore</a></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
@@ -2872,381 +2883,144 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="components" class="tsd-anchor"></a>
 				<h3>components</h3>
-				<div class="tsd-signature tsd-kind-icon">components<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+				<div class="tsd-signature tsd-kind-icon">components<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L244">ecs.ts:244</a></li>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L11">ecs.ts:11</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="entities" class="tsd-anchor"></a>
+				<h3>entities</h3>
+				<div class="tsd-signature tsd-kind-icon">entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L9">ecs.ts:9</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="indices" class="tsd-anchor"></a>
+				<h3>indices</h3>
+				<div class="tsd-signature tsd-kind-icon">indices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L10">ecs.ts:10</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="name" class="tsd-anchor"></a>
+				<h3>name</h3>
+				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L8">ecs.ts:8</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="oncreate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> oncreate</h3>
+				<div class="tsd-signature tsd-kind-icon">oncreate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, any<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L13">ecs.ts:13</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
 					<h4>Type declaration</h4>
 					<ul class="tsd-parameters">
-						<li class="tsd-parameter-index-signature">
-							<h5><span class="tsd-signature-symbol">[</span>_: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a></h5>
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, any<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>Entity: <span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li>
+											<h5>any: <span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-				<a name="registry" class="tsd-anchor"></a>
-				<h3>registry</h3>
-				<div class="tsd-signature tsd-kind-icon">registry<span class="tsd-signature-symbol">:</span> <a href="registry.html" class="tsd-signature-type">Registry</a><span class="tsd-signature-symbol"> = new Registry()</span></div>
+				<a name="ondestroy" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> ondestroy</h3>
+				<div class="tsd-signature tsd-kind-icon">ondestroy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, any<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L243">ecs.ts:243</a></li>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L14">ecs.ts:14</a></li>
 					</ul>
 				</aside>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-				<a name="updatesystems" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Systems</h3>
-				<div class="tsd-signature tsd-kind-icon">update<wbr>Systems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L242">ecs.ts:242</a></li>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, any<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>Entity: <span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li>
+											<h5>any: <span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
+						</li>
 					</ul>
-				</aside>
+				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-				<a name="viewcache" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> view<wbr>Cache</h3>
-				<div class="tsd-signature tsd-kind-icon">view<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="cachedview.html" class="tsd-signature-type">CachedView</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="size" class="tsd-anchor"></a>
+				<h3>size</h3>
+				<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L241">ecs.ts:241</a></li>
+						<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L12">ecs.ts:12</a></li>
 					</ul>
 				</aside>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-				<a name="_getcomponentparamnames" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> _get<wbr>Component<wbr>Param<wbr>Names</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">_get<wbr>Component<wbr>Param<wbr>Names<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L389">ecs.ts:389</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Crimes are committed here</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>func: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Function to extract component names from</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="addassignsystem" class="tsd-anchor"></a>
-				<h3>add<wbr>Assign<wbr>System</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Assign<wbr>System&lt;T&gt;<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L413">ecs.ts:413</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>components: <span class="tsd-signature-type">any</span></h5>
-							</li>
-							<li>
-								<h5>f: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="addremovesystem" class="tsd-anchor"></a>
-				<h3>add<wbr>Remove<wbr>System</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Remove<wbr>System&lt;T&gt;<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L424">ecs.ts:424</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>components: <span class="tsd-signature-type">any</span></h5>
-							</li>
-							<li>
-								<h5>f: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="addupdatesystem" class="tsd-anchor"></a>
-				<h3>add<wbr>Update<wbr>System</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">add<wbr>Update<wbr>System&lt;T&gt;<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L442">ecs.ts:442</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>components: <span class="tsd-signature-type">any</span></h5>
-							</li>
-							<li>
-								<h5>f: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="assign" class="tsd-anchor"></a>
 				<h3>assign</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">assign<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cmpt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">assign<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L309">ecs.ts:309</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L44">ecs.ts:44</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Assign the component value <code>cmpt</code> to entity <code>e</code> with the name <code>name</code></p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The entity</p>
-								</div>
-							</li>
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The name of the component</p>
-								</div>
-							</li>
-							<li>
-								<h5>cmpt: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The value of the component</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="component" class="tsd-anchor"></a>
-				<h3>component</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">component<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L266">ecs.ts:266</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a <a href="componentstore.html">ComponentStore</a> for the component named <code>name</code></p>
-							</div>
-							<p>If a store for a component named <code>name</code> does not already exist one is
-							created</p>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The name of the component</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="componentstore.html" class="tsd-signature-type">ComponentStore</a></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="create" class="tsd-anchor"></a>
-				<h3>create</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>spec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L473">ecs.ts:473</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Create a new entity and assign it components according to <code>spec</code></p>
-							</div>
-							<p>Any <a href="ecs.html#onassign">onassign</a> functions associated with components in <code>spec</code> will fire.
-							The order they fire in is undefined.</p>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>spec: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>an object describing the components to assign to the new entity</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						<p>The newly created [[Entity]]</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="destroy" class="tsd-anchor"></a>
-				<h3>destroy</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L490">ecs.ts:490</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove all components assigned to <code>entity</code> and remove it from <a href="ecs.html#registry">registry</a></p>
-							</div>
-							<p>Any <a href="ecs.html#onremove">onremove</a> functions associated with components on <code>entity</code> will
-							fire. The order they fire in is undefined.</p>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Entity to destroy</p>
-								</div>
+							</li>
+							<li>
+								<h5>component: <span class="tsd-signature-type">any</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -3254,83 +3028,188 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="destroyall" class="tsd-anchor"></a>
-				<h3>destroy<wbr>All</h3>
+				<a name="clear" class="tsd-anchor"></a>
+				<h3>clear</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">destroy<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L252">ecs.ts:252</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L24">ecs.ts:24</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Calls <a href="ecs.html#destroy">destroy</a> on every entity</p>
-							</div>
-							<p>Component on every entity will have its <a href="ecs.html#onremove">onremove</a> system fire. The order
-							they fire in is undefined.</p>
-						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-				<a name="getcachedview" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Cached<wbr>View</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Cached<wbr>View<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cachedview.html" class="tsd-signature-type">CachedView</a></li>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="contains" class="tsd-anchor"></a>
+				<h3>contains</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L405">ecs.ts:405</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L72">ecs.ts:72</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>components: <span class="tsd-signature-type">any</span></h5>
+								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="cachedview.html" class="tsd-signature-type">CachedView</a></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="getcomponent" class="tsd-anchor"></a>
-				<h3>get<wbr>Component</h3>
+				<a name="each" class="tsd-anchor"></a>
+				<h3>each</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Component<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<li class="tsd-signature tsd-kind-icon">each<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L278">ecs.ts:278</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L88">ecs.ts:88</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns the value of the component named <code>name</code> assigned to entity <code>e</code></p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The entity</p>
-								</div>
+								<h5>f: <span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>c: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
 							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="eachcomponent" class="tsd-anchor"></a>
+				<h3>each<wbr>Component</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">each<wbr>Component<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L82">ecs.ts:82</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
 							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The name of the component</p>
-								</div>
+								<h5>f: <span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>c: <span class="tsd-signature-type">any</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="eachentity" class="tsd-anchor"></a>
+				<h3>each<wbr>Entity</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">each<wbr>Entity<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L76">ecs.ts:76</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>f: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="get" class="tsd-anchor"></a>
+				<h3>get</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L64">ecs.ts:64</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -3341,286 +3220,39 @@ img {
 				<a name="getcomponents" class="tsd-anchor"></a>
 				<h3>get<wbr>Components</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Components<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Components<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L290">ecs.ts:290</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L68">ecs.ts:68</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a JavaScript object of every component assigned to entity <code>e</code></p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>remarks</dt>
-								<dd><p>This is not a fast operation. The resulting object is not stored
-									or used by the ECS -- it is computed every time this method is called.</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The entity</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
-						<ul class="tsd-parameters">
-						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="hascomponent" class="tsd-anchor"></a>
-				<h3>has<wbr>Component</h3>
+				<a name="insert" class="tsd-anchor"></a>
+				<h3>insert</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">has<wbr>Component<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L331">ecs.ts:331</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L31">ecs.ts:31</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Tests if the entity <code>e</code> has the a component named <code>name</code></p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>e: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The entity</p>
-								</div>
+								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
 							</li>
 							<li>
-								<h5>name: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The name of the component</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-				<a name="newcachedview" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> new<wbr>Cached<wbr>View</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">new<wbr>Cached<wbr>View<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cachedview.html" class="tsd-signature-type">CachedView</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L361">ecs.ts:361</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Constructs a fast view of <code>components</code></p>
-							</div>
-							<p>Allows for rapid iteration over entites that have all every component in
-							<code>components</code>.</p>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>components: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The stores or names of the components</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="cachedview.html" class="tsd-signature-type">CachedView</a></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="onassign" class="tsd-anchor"></a>
-				<h3>onassign</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">onassign&lt;T&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L419">ecs.ts:419</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>f: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="onremove" class="tsd-anchor"></a>
-				<h3>onremove</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">onremove&lt;T&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L437">ecs.ts:437</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>associate removal logic with entities</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>sugar</dt>
-								<dd><p>the names of the parameters will be used</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>f: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The function</p>
-								</div>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-														<div class="tsd-comment tsd-typography">
-															<p>a</p>
-														</div>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-														<div class="tsd-comment tsd-typography">
-															<p>b</p>
-														</div>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-				<a name="onupdate" class="tsd-anchor"></a>
-				<h3>onupdate</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">onupdate&lt;T&gt;<span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L458">ecs.ts:458</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Associate update systems with components matching the arguments to <code>system</code></p>
-							</div>
-							<p>This function will run once every time <a href="ecs.html#update">update</a> is called on every active
-								entity that has components with names matching the argument names to
-								<code>system</code>. Update systems are run in the order they are attached. The order
-							of entities within a particular system is undefined.</p>
-						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>T</h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>system: <span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The update system</p>
-								</div>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cmpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, e<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>cmpts: <span class="tsd-signature-type">T</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> e: <a href="" class="tsd-signature-type">Entity</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
+								<h5>component: <span class="tsd-signature-type">any</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -3631,34 +3263,19 @@ img {
 				<a name="remove" class="tsd-anchor"></a>
 				<h3>remove</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L321">ecs.ts:321</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L51">ecs.ts:51</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Remove the component named <code>name</code> from the entity <code>e</code></p>
-							</div>
-							<p>Any destroy logic associated with <code>name</code> will be invoked.</p>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>e: <a href="" class="tsd-signature-type">Entity</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The entity</p>
-								</div>
-							</li>
-							<li>
-								<h5>name: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The name of the component</p>
-								</div>
+								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -3666,57 +3283,28 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="update" class="tsd-anchor"></a>
-				<h3>update</h3>
+				<a name="replace" class="tsd-anchor"></a>
+				<h3>replace</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">Entity</a>, component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L500">ecs.ts:500</a></li>
+								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L40">ecs.ts:40</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Run all update systems</p>
-							</div>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-				<a name="view" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> view</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">view<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="view.html" class="tsd-signature-type">View</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/nasser/ajeeb-ecs/blob/92a9d9e/ecs.ts#L343">ecs.ts:343</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Constructs a <a href="view.html">View</a> of components.</p>
-							</div>
-							<p>Not sure why you would use this over the faster <a href="cachedview.html">CachedView</a>, might be
-							obsolete.</p>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>components: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="componentstore.html" class="tsd-signature-type">ComponentStore</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The stores or names of the components</p>
-								</div>
+								<h5>entity: <a href="" class="tsd-signature-type">Entity</a></h5>
+							</li>
+							<li>
+								<h5>component: <span class="tsd-signature-type">any</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="view.html" class="tsd-signature-type">View</a></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
 			</section>
